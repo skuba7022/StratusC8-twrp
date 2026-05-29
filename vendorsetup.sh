@@ -5,6 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_lunch_combo omni_Stratus_C8-user
-add_lunch_combo omni_Stratus_C8-userdebug
-add_lunch_combo omni_Stratus_C8-eng
+COMMON_LUNCH_CHOICES := \
+    omni_Stratus_C8-user \
+    omni_Stratus_C8-userdebug \
+    omni_Stratus_C8-eng
