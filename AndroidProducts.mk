@@ -6,9 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_Stratus_C8.mk
+    $(LOCAL_DIR)/twrp_Stratus_C8.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_Stratus_C8-user \
-    omni_Stratus_C8-userdebug \
-    omni_Stratus_C8-eng
+    twrp_Stratus_C8-eng
