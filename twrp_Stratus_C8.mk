@@ -10,13 +10,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from Stratus_C8 device
 $(call inherit-product, device/cloud/Stratus_C8/device.mk)
 
 PRODUCT_DEVICE := Stratus_C8
-PRODUCT_NAME := omni_Stratus_C8
+PRODUCT_NAME := twrp_Stratus_C8
 PRODUCT_BRAND := Cloud_Mobile
 PRODUCT_MODEL := Stratus C8
 PRODUCT_MANUFACTURER := cloud
