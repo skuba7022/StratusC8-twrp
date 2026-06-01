@@ -112,11 +112,15 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 TW_INCLUDE_REPACKTOOLS := true
 
-# Android 13 Vendor Boot TWRP Configurations
+# Android 13 Vendor Boot Images Configuration
 BOARD_BUILD_VENDOR_BOOT_IMAGE := true
 BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 
-# Size & Arguments (Match size to your stock firmware file)
+# Correct AOSP macro configurations
+PRODUCT_BUILD_VENDOR_BOOT_IMAGE := true
+
+# Partitions Sizes (Match to your device layout)
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 67108864
+BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_MKBOOTIMG_ARGS += --vendor_cmdline "$(BOARD_KERNEL_CMDLINE)"
